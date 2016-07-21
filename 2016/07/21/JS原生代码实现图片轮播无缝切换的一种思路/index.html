@@ -4,28 +4,23 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>my new | hnxieyi</title>
+    <title>JS原生代码实现图片轮播无缝切换的一种思路 | hnxieyi</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="hnxieyi">
     
 
     
-    <meta name="description" content="一级标题
-这是引用这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落2这是段落2这是段落2这是段落2这是段落2这是段落2这是段落2这">
+    <meta name="description" content="JS原生代码实现图片轮播无缝切换的一种思路JS实现图片轮播是个老生常谈的问题，也是新手的必由之路，在这里提供一种思路，供大家参考：1.生成DIV做外框，并设置overflow:hidden；  // 每个方法都必须有的2.创建一个数组arr，放置图片地址3.生成两个并排的图片img1,img2，初始化图片地址为arr[0] arr[1] 并使用绝对定位，便于后面移动图片4.开一个定时器，间隔一定时">
 <meta property="og:type" content="article">
-<meta property="og:title" content="my new">
-<meta property="og:url" content="http://yoursite.com/2016/07/20/my-new/index.html">
+<meta property="og:title" content="JS原生代码实现图片轮播无缝切换的一种思路">
+<meta property="og:url" content="http://yoursite.com/2016/07/21/JS原生代码实现图片轮播无缝切换的一种思路/index.html">
 <meta property="og:site_name" content="hnxieyi">
-<meta property="og:description" content="一级标题
-这是引用这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落2这是段落2这是段落2这是段落2这是段落2这是段落2这是段落2这">
-<meta property="og:image" content="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png">
-<meta property="og:updated_time" content="2016-07-21T04:47:55.250Z">
+<meta property="og:description" content="JS原生代码实现图片轮播无缝切换的一种思路JS实现图片轮播是个老生常谈的问题，也是新手的必由之路，在这里提供一种思路，供大家参考：1.生成DIV做外框，并设置overflow:hidden；  // 每个方法都必须有的2.创建一个数组arr，放置图片地址3.生成两个并排的图片img1,img2，初始化图片地址为arr[0] arr[1] 并使用绝对定位，便于后面移动图片4.开一个定时器，间隔一定时">
+<meta property="og:updated_time" content="2016-07-21T05:14:34.853Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="my new">
-<meta name="twitter:description" content="一级标题
-这是引用这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落2这是段落2这是段落2这是段落2这是段落2这是段落2这是段落2这">
-<meta name="twitter:image" content="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png">
+<meta name="twitter:title" content="JS原生代码实现图片轮播无缝切换的一种思路">
+<meta name="twitter:description" content="JS原生代码实现图片轮播无缝切换的一种思路JS实现图片轮播是个老生常谈的问题，也是新手的必由之路，在这里提供一种思路，供大家参考：1.生成DIV做外框，并设置overflow:hidden；  // 每个方法都必须有的2.创建一个数组arr，放置图片地址3.生成两个并排的图片img1,img2，初始化图片地址为arr[0] arr[1] 并使用绝对定位，便于后面移动图片4.开一个定时器，间隔一定时">
 
     
     <link rel="alternative" href="/atom.xml" title="hnxieyi" type="application/atom+xml">
@@ -85,14 +80,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2016/07/20/my-new/" title="my new" itemprop="url">my new</a>
+      <a href="/2016/07/21/JS原生代码实现图片轮播无缝切换的一种思路/" title="JS原生代码实现图片轮播无缝切换的一种思路" itemprop="url">JS原生代码实现图片轮播无缝切换的一种思路</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="hnxieyi" target="_blank" itemprop="author">hnxieyi</a>
 		
   <p class="article-time">
-    <time datetime="2016-07-20T13:50:20.000Z" itemprop="datePublished"> 发表于 2016-07-20</time>
+    <time datetime="2016-07-21T05:06:38.000Z" itemprop="datePublished"> 发表于 2016-07-21</time>
     
   </p>
 </header>
@@ -101,22 +96,27 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#一级标题"><span class="toc-number">1.</span> <span class="toc-text">一级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#插入链接"><span class="toc-number">1.0.0.1.</span> <span class="toc-text">插入链接</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#插入图片"><span class="toc-number">1.0.0.2.</span> <span class="toc-text">插入图片</span></a></li></ol></li></ol></li></ol></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#JS原生代码实现图片轮播无缝切换的一种思路"><span class="toc-number">1.</span> <span class="toc-text">JS原生代码实现图片轮播无缝切换的一种思路</span></a></li></ol>
 		
 		</div>
 		
-		<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><blockquote>
-<p>这是引用<br>这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1这是段落1<br>这是段落2这是段落2这是段落2这是段落2这是段落2这是段落2这是段落2这是段落2这是段落2这是段落2这是段落2这是段落2这是段落2这是段落2这是段落2这是段落2这是段落2这是段落2这是段落2这是段落2这是段落2这是段落2这是段落2这是段落2这是段落2这是段落2这是段落2这是段落2这是段落2这是段落2这是段落2这是段落2这是段落2这是段落2</p>
+		<h1 id="JS原生代码实现图片轮播无缝切换的一种思路"><a href="#JS原生代码实现图片轮播无缝切换的一种思路" class="headerlink" title="JS原生代码实现图片轮播无缝切换的一种思路"></a>JS原生代码实现图片轮播无缝切换的一种思路</h1><p>JS实现图片轮播是个老生常谈的问题，也是新手的必由之路，在这里提供一种思路，供大家参考：<br>1.生成DIV做外框，并设置overflow:hidden；  // 每个方法都必须有的<br>2.创建一个数组arr，放置图片地址<br>3.生成两个并排的图片img1,img2，初始化图片地址为arr[0] arr[1] 并使用绝对定位，便于后面移动图片<br>4.开一个定时器，间隔一定时间后，img1 img2的left值同时向左移动图片宽度值的像素   //移动的时候可以再开个定时器，做滑动的效果<br>5.当img1的left值为负图片宽度时，赋予img1的left值为正图片宽度，并且将数组的第3张图片地址赋予img1，继续向左移动<br>6.当img2的left值为负图片宽度时，赋予img2的left值为正图片宽度，并将数组的第4张图片地址赋予img2，继续向左移动<br>7.当两张图片的图片地址到了数组的最后时，循环到第一个图片地址。</p>
 <hr>
-<p>这是横线</p>
-</blockquote>
-<h4 id="插入链接"><a href="#插入链接" class="headerlink" title="插入链接"></a>插入链接</h4><p><a href="http://baidu.com" target="_blank" rel="external">Baidu</a></p>
-<h4 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h4><p><img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png" alt="baidu"></p>
-<p><strong> 这是粗体 </strong><br><code>&lt;html&gt;
-        &lt;body&gt;
-            test
-        &lt;/body&gt;
-    &lt;/html&gt;</code></p>
+<p>具体代码为：</p>
+<p>&lt;!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Transitional//EN” “<a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;" target="_blank" rel="external">http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</a></p>
+<html xmlns="http://www.w3.org/1999/xhtml"><br><head><br><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><br><title>图片自动切换</title><br></head><br><style><br>body{margin:100px;}<br>p,img,div,ul,li { margin:0;padding:0;}<br>#content { width:600px; height:400px; border:1px solid #F00; position:relative;overflow:hidden;}<br>#img1 { position:absolute;top:0;left:0;}<br>#img2 { position:absolute;top:0;left:600px;}<br>#intro {width:600px; height:60px; position:absolute; top:340px; left:0;}<br>p { width:600px; height:60px; background:#333; opacity:0.5; position:absolute;}<br>span {display:block; width:600px; height:60px; line-height:60px; text-align:center; color:#fff; position:absolute; z-index:2;}<br></style><br><script><br>/<em><br>两个图片位置变换，同时把数组里的图片地址赋予图片
+</em>/<br><br><br>window.onload = function(){<br>var intro = document.getElementById(‘intro’);<br>var oSpan = intro.getElementsByTagName(‘span’)[0];<br>var oP = intro.getElementsByTagName(‘p’)[0];<br>var img1 = document.getElementById(‘img1’);//图片1<br>var img2 = document.getElementById(‘img2’);//图片2<br>var oUl = document.getElementsByTagName(‘ul’)[0];<br>var arr = [‘img/01.jpg’,’img/02.jpg’,’img/03.jpg’,’img/04.jpg’,’img/05.jpg’]; //图片地址<br>var timer1 = null;<br>var timer2 = null;<br>var timer3 = null;<br>//初始化<br>var n = 0;<br>var a = 0;<br>var b = 1;<br>intro.style[‘top’] = ‘400px’;<br>oSpan.innerHTML = ‘图片说明’+(n+1);<br>img1.src = arr[a];<br>img2.src = arr[b];<br><br>timer1 = setInterval(changeImg,3000);<br>timer3 = setInterval(autoText,30);<br><br>function changeImg(){<br>    clearInterval(timer2);<br>    clearInterval(timer3);<br>    intro.style[‘top’] = ‘400px’;<br>    timer2 = setInterval(autoPic,30);<br>    timer3 = setInterval(autoText,30);<br>    n++;<br>    n%=arr.length;<br>    oSpan.innerHTML = ‘图片说明’+(n+1);<br>};<br><br>function autoPic(){<br>    var length1 = parseInt(getStyle(img1,’left’))-10;<br>    var length2 = parseInt(getStyle(img2,’left’))-10;<br>    img1.style[‘left’] = length1+’px’;<br>    img2.style[‘left’] = length2+’px’;<br><br>    if(length1==-600){<br>    a+=2;<br>    if(a&gt;=arr.length)a-=arr.length;<br>    img1.style[‘left’] = ‘600px’;<br>    img1.src = arr[a];<br>    clearInterval(timer2);<br>    }<br>    if(length2== -600){<br>    b+=2;<br>    if(b&gt;=arr.length)b-=arr.length;<br>    img2.style[‘left’] = ‘600px’;<br>    img2.src = arr[b];<br>    clearInterval(timer2);<br>    }<br>};<br><br><code>function autoText(){
+    var height = parseInt(getStyle(intro,&#39;top&#39;))-2;
+    intro.style[&#39;top&#39;] = height +&#39;px&#39;;
+    if(height&lt;=340)clearInterval(timer3);
+};
+
+ function getStyle(obj,str){return obj.currentStyle?obj.currentStyle[str]:getComputedStyle(obj)[str];};
+ };</code><br><br> </script><br><br>    <body><br>        <div id="content"><br>        <img id="img1"><br>        <img id="img2"><br>            <div id="intro"><br>                <span></span><br>                <p></p><br>            </div><br>        </div><br>    </body><br> </html>
+
+
+
+<p>此代码仅实现功能，其中函数还可以继续优化，本文不再赘述。<br>转载请标明作者，谢谢。</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -129,7 +129,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://yoursite.com/2016/07/20/my-new/" data-title="my new | hnxieyi" data-tsina="null" class="share clearfix">
+	  <div data-url="http://yoursite.com/2016/07/21/JS原生代码实现图片轮播无缝切换的一种思路/" data-title="JS原生代码实现图片轮播无缝切换的一种思路 | hnxieyi" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -142,19 +142,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2016/07/21/JS原生代码实现图片轮播无缝切换的一种思路/" title="JS原生代码实现图片轮播无缝切换的一种思路">
-  <strong>上一篇：</strong><br/>
-  <span>
-  JS原生代码实现图片轮播无缝切换的一种思路</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2016/07/20/hello-world/"  title="Hello World">
+<a href="/2016/07/20/my-new/"  title="my new">
  <strong>下一篇：</strong><br/> 
- <span>Hello World
+ <span>my new
 </span>
 </a>
 </div>
@@ -169,7 +161,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#一级标题"><span class="toc-number">1.</span> <span class="toc-text">一级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#插入链接"><span class="toc-number">1.0.0.1.</span> <span class="toc-text">插入链接</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#插入图片"><span class="toc-number">1.0.0.2.</span> <span class="toc-text">插入图片</span></a></li></ol></li></ol></li></ol></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#JS原生代码实现图片轮播无缝切换的一种思路"><span class="toc-number">1.</span> <span class="toc-text">JS原生代码实现图片轮播无缝切换的一种思路</span></a></li></ol>
  
   </div>
 
